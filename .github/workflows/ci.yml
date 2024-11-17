@@ -57,4 +57,4 @@ jobs:
 
       # Step 5: Push Docker Image
       - name: Push Docker Image
-        run: docker push <dockerhub_username>/ci-cd-python-app:latest
+        run: docker push ${{secrets.DOCKER_PASSWORD}}/ci-cd-python-app:latest
